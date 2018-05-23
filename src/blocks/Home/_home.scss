@@ -1,0 +1,39 @@
+.home-block {
+  min-height: 530px;
+  background-color: #000;
+  // padding: 250px 0 300px;
+  position: relative;
+  background-image: url("./blocks/Home/images/SliderPic_01.jpeg");
+  @include image;
+  .slogan {
+    width: 250px;
+    color: $skin-color;
+    border-bottom: 8px solid $skin-color;
+    white-space: nowrap;
+    text-align: justify;
+    text-align-last: justify;
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-180%));
+    top: 60px;
+    .main-text {
+      font-size: 21px;
+      line-height: 130%;
+    }
+    .sub-text {
+      font-size: 19px;
+      margin: 20px 0;
+    }
+  }
+  .logo {
+    width: 172px;
+    height: 232px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("./blocks/Home/logo.png");
+    @include image;
+  }
+}

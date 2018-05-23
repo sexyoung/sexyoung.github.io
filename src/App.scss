@@ -1,0 +1,24 @@
+// @import 'node_modules/bootstrap/scss/variables';
+// @import 'node_modules/bootstrap/scss/mixins';
+// @import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/normalize.scss/normalize';
+@import 'node_modules/bootstrap-sass-grid/sass/bootstrap-sass-grid';
+@import "./var";
+@import "./mixins";
+
+.home {
+  background-color: lightyellow
+}
+
+.block:nth-child(odd) {
+  background-color: #eee;
+}
+
+.block:nth-child(even) {
+  background-color: #ccc;
+}
+
+.wrapper {
+  @import "./blocks/Home/home";
+  @import "./blocks/About/about";
+}
