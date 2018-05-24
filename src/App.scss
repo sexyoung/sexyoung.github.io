@@ -19,6 +19,28 @@
 }
 
 .wrapper {
+  .menu {
+    margin: 0;
+    padding: 45px 0;
+    background-color: #000;
+    text-align: center;
+    li {
+      font-size: 29px;
+      display: inline;
+      font-family: Lato, sans-serif;
+      font-weight: lighter;
+      &:not(:last-of-type) {
+        margin-right: 35px;
+      }
+      a {
+        text-decoration: none;
+        color: $skin-color;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   @import "./blocks/Home/home";
   @import "./blocks/About/about";
 }

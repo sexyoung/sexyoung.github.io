@@ -1375,40 +1375,50 @@ body {
 .block:nth-child(even) {
   background-color: #ccc; }
 
-.wrapper .home-block {
-  min-height: 530px;
+.wrapper .menu {
+  margin: 0;
+  padding: 45px 0;
   background-color: #000;
-  position: relative;
+  text-align: center; }
+  .wrapper .menu li {
+    font-size: 29px;
+    display: inline;
+    font-family: Lato, sans-serif;
+    font-weight: lighter; }
+    .wrapper .menu li:not(:last-of-type) {
+      margin-right: 35px; }
+    .wrapper .menu li a {
+      text-decoration: none;
+      color: #d5a362; }
+      .wrapper .menu li a:hover {
+        text-decoration: underline; }
+
+.wrapper .home-block {
+  background-color: #000;
+  padding: 140px 0 230px;
   background-image: url("./blocks/Home/images/SliderPic_01.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-  .wrapper .home-block .slogan {
-    width: 250px;
-    color: #d5a362;
-    border-bottom: 8px solid #d5a362;
-    white-space: nowrap;
-    text-align: justify;
-    text-align-last: justify;
-    position: absolute;
-    left: 50%;
-    transform: translateX(calc(-180%));
-    top: 60px; }
-    .wrapper .home-block .slogan .main-text {
-      font-size: 21px;
-      line-height: 130%; }
-    .wrapper .home-block .slogan .sub-text {
-      font-size: 19px;
-      margin: 20px 0; }
+  .wrapper .home-block > * {
+    margin: 0 auto; }
   .wrapper .home-block .logo {
-    width: 172px;
-    height: 232px;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 273px;
     background-image: url("./blocks/Home/logo.png");
+    margin-bottom: 50px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
+  .wrapper .home-block .slogan {
+    color: #fff;
+    padding: 0;
+    text-align: center; }
+    .wrapper .home-block .slogan li {
+      font-size: 26px;
+      display: inline;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold; }
+      .wrapper .home-block .slogan li:not(:last-of-type):after {
+        content: "|";
+        margin: 0 5px; }
