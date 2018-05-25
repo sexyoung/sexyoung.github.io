@@ -1,3 +1,75 @@
 .contact-block {
-  
+  padding: 130px 0 110px;
+  color: $skin-color;
+  background-image: url("./blocks/Contact/images/BG_05.png");
+  @include image;
+  img {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+  }
+  .pull-right {
+    text-align: right;
+  }
+  header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  section {
+    color: #fff;
+    font-size: 25px;
+    line-height: 37px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    font-size: 25px;
+    line-height: 250%;
+    li:before {
+      content: '';
+      width: 42px;
+      height: 42px;
+      display: inline-block;
+      vertical-align: middle;
+      @include image;
+      margin-right: 25px;
+    }
+    li.mobile:before {
+      background-image: url("./blocks/Contact/images/Icon_phone@2x.png");
+    }
+    li.email:before {
+      background-image: url("./blocks/Contact/images/Icon_mail@2x.png");
+    }
+  }
+  form {
+    .field {
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 30px;
+      width: 100%;
+      margin-bottom: 30px;
+      outline: none;
+      border: 5px solid transparent;
+      &:focus {
+        border: 5px solid $skin-color;
+      }
+    }
+    button {
+      width: 100%;
+      color: #000;
+      padding: 20px 0;
+      border: none;
+      background-color: $skin-color;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
 }
