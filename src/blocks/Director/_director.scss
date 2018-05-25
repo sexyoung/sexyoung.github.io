@@ -1,0 +1,20 @@
+.director-block {
+  color: #000;
+  background-color: $skin-color;
+  .padding {
+    padding: 0 90px;
+  }
+  .row {
+    padding: 130px 0 90px;
+  }
+  .title {
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .text {
+    padding-top: 30px;
+  }
+}
