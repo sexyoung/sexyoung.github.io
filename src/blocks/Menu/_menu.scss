@@ -1,0 +1,99 @@
+.menu {
+  margin: 0;
+  padding: 45px 0;
+  background-color: #000;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  .menu-button {
+    display: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 20px;
+      display: inline;
+      font-weight: lighter;
+      &:not(:last-of-type) {
+        margin-right: 35px;
+      }
+      a {
+        text-decoration: none;
+        color: $skin-color;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &+*{
+    margin-top: 114px;
+  }
+  @media only screen and (max-width: 991px) {
+    ul {
+      li {
+        // display: block;
+        &:not(:last-of-type) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px 0;
+    height: 114px;
+    text-align: right;
+    .menu-button {
+      display: inline-block;
+      width: 50px;
+      margin-right: 20px;
+      height: 63px;
+      .bar {
+        margin: 12px 0;
+        height: 5px;
+        background-color: #fff;
+      }
+    }
+    .menu-button.open {
+      position: relative;
+      .bar {
+        display: none;
+      }
+      &:before, &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+      & + ul {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+      text-align: center;
+      background-color: #000;
+      margin-top: -85px;
+      padding: 10px 0;
+      li {
+        display: block;
+        padding: 10px 0;
+        &:not(:last-of-type) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

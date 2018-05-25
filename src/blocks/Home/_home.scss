@@ -27,4 +27,20 @@
       }
     }
   }
+
+  @media only screen and (max-width: $screen-sm-min) {
+    padding: 50px 0;
+    .logo {
+      height: 200px;
+      background-size: contain;
+    }
+    .slogan {
+      li {
+        display: block;
+        &:not(:last-of-type):after {
+          content: '';
+        }
+      }
+    }
+  }
 }

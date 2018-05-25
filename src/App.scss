@@ -13,36 +13,11 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
-.block:nth-child(odd) {
-  background-color: #eee;
-}
-
-.block:nth-child(even) {
-  background-color: #ccc;
+.block {
+  overflow: hidden;
 }
 
 .wrapper {
-  .menu {
-    margin: 0;
-    padding: 45px 0;
-    background-color: #000;
-    text-align: center;
-    li {
-      font-size: 20px;
-      display: inline;
-      font-weight: lighter;
-      &:not(:last-of-type) {
-        margin-right: 35px;
-      }
-      a {
-        text-decoration: none;
-        color: $skin-color;
-        &:hover {
-          color: #fff;
-        }
-      }
-    }
-  }
   .title {
     font-size: 70px;
     line-height: 90px;
@@ -64,6 +39,7 @@ html, body {
     font-size: 30px;
   }
 
+  @import "./blocks/Menu/menu";
   @import "./blocks/Home/home";
   @import "./blocks/About/about";
   @import "./blocks/Service/service";
