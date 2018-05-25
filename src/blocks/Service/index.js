@@ -8,19 +8,19 @@ class Service extends React.PureComponent {
           <h2 className="title">What do we do?</h2>
           <div className="row">
             <div className="col-md-4">
-              <div className="partnerships">
+              <div className="partnerships sub-title">
                 Partnerships
                 <a href="#" target="_blank" className="more">more</a>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="immigration-assistance">
+              <div className="immigration-assistance sub-title">
                 Immigration Assistance
                 <a href="#" target="_blank" className="more">more</a>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="property-development">
+              <div className="property-development sub-title">
                 Property Development
                 <a href="#" target="_blank" className="more">more</a>
               </div>

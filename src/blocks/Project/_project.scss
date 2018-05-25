@@ -1,0 +1,62 @@
+$image-list: (
+  "1.jpg",
+  "11-the-close-06.jpg",
+  "11-the-close-11.jpg",
+  "11-the-close-18.jpg",
+  "11-the-close-28.jpg",
+  "11-the-close-351.jpg",
+  "164_BLYTH_ST_PMDM5498.jpg",
+  "Courtyard_2.jpg",
+  "Courtyard_11.jpg",
+  "Facade_sky_31.jpg",
+  "IMG_1482.jpg",
+  "IMG_1593.jpg",
+  "IMG_1602.jpg",
+  "IMG_9439.jpg",
+  "IMG_14921.jpg",
+  "Lounge_1.jpg",
+  "Vault_11.jpg",
+);
+
+.project-block {
+  color: $skin-color;
+  text-align: center;
+  padding: 80px 0 100px;
+  background-color: #000;
+  .sub-title {
+    font-weight: lighter;
+    margin-bottom: 30px;
+  }
+  .cover-flow {
+    .img {
+      height: 728px;
+      background-color: #333;
+      @include image;
+    }
+    @for $i from 1 through length($image-list) {
+      div:nth-of-type(#{$i}) .img {
+        background-image: url('./blocks/Project/images/#{nth($image-list, $i)}');
+      }
+    }
+    .slick-arrow {
+      width: 135px;
+      height: 256px;
+      background-image: url('./blocks/Project/images/Arrow@2x.png');
+      @include image;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      &:before {
+        content: '';
+      }
+    }
+    .slick-prev {
+      left: -75px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .slick-next {
+      right: -75px;
+    }
+  }
+}

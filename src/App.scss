@@ -3,6 +3,9 @@
 // @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/normalize.scss/normalize';
 @import 'node_modules/bootstrap-sass-grid/sass/bootstrap-sass-grid';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 @import "./var";
 @import "./mixins";
 
@@ -44,6 +47,9 @@ html, body {
     font-size: 70px;
     line-height: 90px;
   }
+  .sub-title {
+    font-size: 50px;
+  }
   .text {
     font-size: 18px;
     line-height: 30px;
@@ -51,4 +57,5 @@ html, body {
   @import "./blocks/Home/home";
   @import "./blocks/About/about";
   @import "./blocks/Service/service";
+  @import "./blocks/Project/project";
 }
