@@ -1,3 +1,27 @@
 .about-block {
-  
+  background-color: #000;
+  .title {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .text {
+    font-size: 25px;
+    line-height: 37px;
+  }
+  .padding {
+    padding: 0 90px;
+  }
+  .about {
+    color: $skin-color;
+    padding: 120px 0 150px;
+  }
+  .vision {
+    background-color: $skin-color;
+    background-image: url("./blocks/About/images/BG_03.png");
+    background-position: calc(-50%) center;
+    background-repeat: no-repeat;
+    .row > div:nth-of-type(2) {
+      padding: 160px 90px 180px;
+    }
+  }
 }
