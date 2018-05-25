@@ -18,9 +18,8 @@
     padding: 0;
     text-align: center;
     li {
-      font-size: 26px;
+      font-size: 20px;
       display: inline;
-      font-family: 'Lato', sans-serif;
       font-weight: bold;
       &:not(:last-of-type):after {
         content: "|";
