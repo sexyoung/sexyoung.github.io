@@ -7,7 +7,6 @@ import {
   Service,
   Project,
   Director,
-  Supply,
   Guarantee,
   Testimonial,
   Contact,
@@ -22,7 +21,6 @@ class App extends Component {
           <li><a href="#">Service</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Directors</a></li>
-          <li><a href="#">Supplies</a></li>
           <li><a href="#">Guarantee</a></li>
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">Contact</a></li>
@@ -32,7 +30,6 @@ class App extends Component {
         <Service />
         <Project />
         <Director />
-        <Supply />
         <Guarantee />
         <Testimonial />
         <Contact />
