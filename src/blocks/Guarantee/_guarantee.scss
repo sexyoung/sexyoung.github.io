@@ -1,0 +1,18 @@
+.guarantee-block {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #fff;
+  .sub-title {
+    color: $skin-color;
+    font-weight: bold;
+    margin-bottom: 75px;
+  }
+  .row div{
+    height: 70px;
+    @include image;
+    background-size: contain;
+  }
+  img {
+    height: 100%;
+  }
+}
