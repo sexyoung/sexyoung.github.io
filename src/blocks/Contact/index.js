@@ -5,13 +5,13 @@ import wechat from './images/Wechat_icon@2x.png';
 class Contact extends React.PureComponent {
   render () {
     return (
-      <div className="block contact-block">
+      <div id="contact" className="block contact-block">
         <div className="container">
           <div className="row">
             <div className="col-md-6 title">
               Contact us
             </div>
-            <div className="col-md-6 pull-right">
+            <div className="col-md-6 right">
               <a href="#" target="_blank"><img src={fb} alt="fb" /></a>
               <a href="#" target="_blank"><img src={wechat} alt="wechat" /></a>
             </div>

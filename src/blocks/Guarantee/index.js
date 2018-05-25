@@ -7,7 +7,7 @@ import yarrington from './images/yarrington-construction-bendigo-3550-accreditat
 class Guarantee extends React.PureComponent {
   render () {
     return (
-      <div className="block guarantee-block">
+      <div id="guarantee" className="block guarantee-block">
         <div className="container">
           <div className="sub-title">Quality Certificated</div>
           <div className="row">

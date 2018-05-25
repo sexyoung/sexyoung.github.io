@@ -3,7 +3,7 @@ import React from 'react';
 class About extends React.PureComponent {
   render () {
     return (
-      <div className="block about-block">
+      <div id="about" className="block about-block">
         <div className="container">
           <div className="row about">
             <div className="col-md-6 title">

@@ -3,7 +3,7 @@ import React from 'react';
 class Service extends React.PureComponent {
   render () {
     return (
-      <div className="block service-block">
+      <div id="service" className="block service-block">
         <div className="container">
           <h2 className="title">What do we do?</h2>
           <div className="row">

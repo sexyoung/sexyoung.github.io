@@ -23,4 +23,27 @@
       padding: 160px 90px 180px;
     }
   }
+  @media only screen and (max-width: $screen-sm-min) {
+    .about {
+      padding: 50px 0;
+      .padding {
+        padding: 0 35px;
+      }
+    }
+    .vision {
+      &:before {
+        width: 100%;
+        height: 400px;
+        position: static;
+      }
+      .row {
+        .col-md-6 {
+          padding: 50px 35px;
+          &:nth-of-type(1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

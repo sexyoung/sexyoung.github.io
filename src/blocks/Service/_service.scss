@@ -45,4 +45,13 @@
       }
     }
   }
+  @media only screen and (max-width: $screen-sm-min) {
+    padding-bottom: 50px;
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 40px;
+    }
+  }
 }

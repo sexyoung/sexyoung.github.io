@@ -3,7 +3,7 @@ import React from 'react';
 class Director extends React.PureComponent {
   render () {
     return (
-      <div className="block director-block">
+      <div id="director" className="block director-block">
         <div className="container">
           <div className="row">
             <div className="col-md-6 title">

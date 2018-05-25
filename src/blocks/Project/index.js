@@ -11,7 +11,7 @@ class Project extends React.PureComponent {
       slidesToScroll: 1
     };
     return (
-      <div className="block project-block">
+      <div id="project" className="block project-block">
         <div className="title">Projects</div>
         <div className="sub-title">Build in Luxury and Reliable</div>
         <div className="container">

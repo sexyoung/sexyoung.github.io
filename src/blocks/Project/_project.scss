@@ -23,6 +23,7 @@ $image-list: (
   text-align: center;
   padding: 80px 0 100px;
   background-color: #000;
+  overflow: hidden;
   .sub-title {
     font-weight: lighter;
     margin-bottom: 30px;
@@ -57,6 +58,27 @@ $image-list: (
     }
     .slick-next {
       right: -75px;
+    }
+  }
+  @media only screen and (max-width: $screen-sm-min) {
+    padding: 50px 0;
+    .sub-title {
+      font-size: 30px;
+    }
+    .cover-flow {
+      .img {
+        height: 400px;
+      }
+      .slick-arrow {
+        width: 135px * .3;
+        height: 256px * .3;
+      }
+      .slick-prev {
+        left: 20px;
+      }
+      .slick-next {
+        right: 20px;
+      }
     }
   }
 }

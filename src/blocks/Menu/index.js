@@ -1,5 +1,6 @@
 import cx from 'classnames';
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Menu extends React.PureComponent {
   constructor() {
@@ -26,13 +27,13 @@ class Menu extends React.PureComponent {
           <div className="bar" />
         </div>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Directors</a></li>
-          <li><a href="#">Guarantee</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><AnchorLink href="#about">About</AnchorLink></li>
+          <li><AnchorLink href="#service">Service</AnchorLink></li>
+          <li><AnchorLink href="#project">Projects</AnchorLink></li>
+          <li><AnchorLink href="#director">Directors</AnchorLink></li>
+          <li><AnchorLink href="#guarantee">Guarantee</AnchorLink></li>
+          <li><AnchorLink href="#testimonial">Testimonials</AnchorLink></li>
+          <li><AnchorLink href="#contact">Contact</AnchorLink></li>
         </ul>
       </div>
     );

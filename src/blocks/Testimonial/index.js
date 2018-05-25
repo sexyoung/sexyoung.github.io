@@ -3,7 +3,7 @@ import React from 'react';
 class Testimonial extends React.PureComponent {
   render () {
     return (
-      <div className="block testimonial-block">
+      <div id="testimonial" className="block testimonial-block">
         <div className="container">
           <div className="row">
             <div className="col-md-6 title">

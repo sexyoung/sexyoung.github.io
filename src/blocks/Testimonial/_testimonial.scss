@@ -32,4 +32,17 @@
       }
     }
   }
+  @media only screen and (max-width: $screen-sm-min) {
+    padding: 50px 0 0;
+    .title {
+      line-height: 50px;
+      margin-bottom: 50px;
+      &:before {
+        margin-bottom: 20px;
+      }
+    }
+    .text {
+      padding: 50px 50px 90px;
+    }
+  }
 }
