@@ -6,8 +6,8 @@
 @import "./var";
 @import "./mixins";
 
-.home {
-  background-color: lightyellow
+html, body {
+  font-family: 'Lato', sans-serif;
 }
 
 .block:nth-child(odd) {
@@ -25,9 +25,8 @@
     background-color: #000;
     text-align: center;
     li {
-      font-size: 29px;
+      font-size: 20px;
       display: inline;
-      font-family: Lato, sans-serif;
       font-weight: lighter;
       &:not(:last-of-type) {
         margin-right: 35px;
@@ -36,7 +35,7 @@
         text-decoration: none;
         color: $skin-color;
         &:hover {
-          text-decoration: underline;
+          color: #fff;
         }
       }
     }
