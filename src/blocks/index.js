@@ -1,4 +1,5 @@
 import Home from './Home';
+import About from './About';
 import Service from './Service';
 import Project from './Project';
 import Director from './Director';
@@ -9,6 +10,7 @@ import Contact from './Contact';
 
 export {
   Home,
+  About,
   Service,
   Project,
   Director,

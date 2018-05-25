@@ -3,6 +3,7 @@ import './App.css';
 
 import {
   Home,
+  About,
   Service,
   Project,
   Director,
@@ -27,6 +28,7 @@ class App extends Component {
           <li><a href="#">Contact</a></li>
         </ul>
         <Home />
+        <About />
         <Service />
         <Project />
         <Director />
