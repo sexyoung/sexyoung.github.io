@@ -1,0 +1,50 @@
+.service-block {
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 180px;
+  .title {
+    color: $skin-color;
+  }
+  .row > div {
+    div {
+      height: 430px;
+      font-size: 50px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      position: relative;
+      @include image;
+      &.partnerships {
+        background-image: url("./blocks/Service/images/partnerships.png");
+      }
+      &.immigration-assistance {
+        background-image: url("./blocks/Service/images/immigration-assistance.png");
+      }
+      &.property-development {
+        background-image: url("./blocks/Service/images/property-development.png");
+      }
+      &:hover {
+        background-image: none;
+        color: #fff;
+        background-color: $skin-color;
+        .more {
+          display: inline-block;
+        }
+      }
+      .more {
+        display: none;
+        color: #fff;
+        border: 1px solid #fff;
+        text-decoration: none;
+        padding: 0px 20px 10px;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, calc(-50% + 120px));
+      }
+    }
+  }
+}

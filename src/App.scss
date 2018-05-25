@@ -40,6 +40,15 @@ html, body {
       }
     }
   }
+  .title {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
   @import "./blocks/Home/home";
   @import "./blocks/About/about";
+  @import "./blocks/Service/service";
 }

@@ -1,13 +1,5 @@
 .about-block {
   background-color: #000;
-  .title {
-    font-size: 70px;
-    line-height: 90px;
-  }
-  .text {
-    font-size: 18px;
-    line-height: 30px;
-  }
   .padding {
     padding: 0 90px;
   }
@@ -16,11 +8,18 @@
     padding: 120px 0 150px;
   }
   .vision {
+    position: relative;
     background-color: $skin-color;
-    background-image: url("./blocks/About/images/BG_03.png");
-    background-position: calc(-50%) center;
-    background-repeat: no-repeat;
-    .row > div:nth-of-type(2) {
+    &:before {
+      content: '';
+      background-image: url("./blocks/About/images/BG_03.png");
+      @include image;
+      width: 50%;
+      height: 100%;
+      display: block;
+      position: absolute;
+    }
+    .row > div {
       padding: 160px 90px 180px;
     }
   }
