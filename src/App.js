@@ -33,6 +33,9 @@ class App extends Component {
         <Guarantee />
         <Testimonial />
         <Contact />
+        <footer>
+          ©2018 Scheracon Victoria, Australia
+        </footer>
       </div>
     );
   }
