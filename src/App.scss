@@ -54,10 +54,21 @@ html, body {
     font-size: 18px;
     line-height: 30px;
   }
+
+  .more {
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 0px 20px 10px;
+    font-size: 30px;
+  }
+
   @import "./blocks/Home/home";
   @import "./blocks/About/about";
   @import "./blocks/Service/service";
   @import "./blocks/Project/project";
   @import "./blocks/Director/director";
   @import "./blocks/Guarantee/guarantee";
+  @import "./blocks/Testimonial/testimonial";
+  @import "./blocks/Contact/contact";
 }

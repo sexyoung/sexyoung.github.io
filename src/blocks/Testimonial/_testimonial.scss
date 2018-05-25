@@ -1,0 +1,35 @@
+.testimonial-block {
+  padding: 170px 0;
+  background-image: url("./blocks/Testimonial/images/Testmonials_BG.png");
+  @include image;
+  .title {
+    color: $skin-color;
+    line-height: 75px;
+    font-weight: bold;
+    &:before {
+      font-size: 30px;
+      display: block;
+      content: 'TESTMONIALS';
+    }
+  }
+  .sub-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .text {
+    color: #fff;
+    padding: 95px 45px 75px;
+    background-color: rgba(#000, .7);
+    // line-height: 150%;
+    .more {
+      float: right;
+      display: inline-block;
+      font-size: 30px;
+      padding: 2px 20px 8px;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+}
