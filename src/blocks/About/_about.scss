@@ -1,4 +1,5 @@
 .about-block {
+  color: #000;
   background-color: #000;
   .padding {
     padding: 0 90px;
@@ -23,7 +24,7 @@
       padding: 160px 90px 180px;
     }
   }
-  @media only screen and (max-width: $screen-sm-min) {
+  @media only screen and (max-width: $screen-md-min) {
     .about {
       padding: 50px 0;
       .padding {
