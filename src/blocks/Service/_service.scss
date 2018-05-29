@@ -7,6 +7,8 @@
   }
   .row > div {
     div {
+      font-size: 40px;
+      line-height: 50px;
       height: 430px;
       box-sizing: border-box;
       display: flex;
@@ -37,7 +39,7 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, calc(-50% + 120px));
+        transform: translate(-50%, calc(-50% + 120px)) scale(.8);
         &:hover {
           background-color: #fff;
           color: $skin-color;
